@@ -10,7 +10,7 @@ function App() {
         <div className="w-full flex flex-col items-center py-10 px-3">
             {/* <p>Ini Home</p> */}
             <div className="space-y-8 flex flex-col items-center">
-                <img src="/logo.png" className="w-[350px] h-auto" alt="" />
+                <img src="/logo.png" className="w-[350px] h-auto animate-rubberBand" alt="" />
 
                 <div className="space-y-6 flex flex-col items-center">
                     <p className="font-outfit text-6xl font-bold text-blue-primary text-center max-w-5xl">Empowering your math skills through interactive tools.</p>
@@ -24,14 +24,6 @@ function App() {
                 <input type="text" name="solver" id="solver" className="w-full h-full  px-4 rounded-full outline-none placeholder:text-gray-500 placeholder:font-outfit text-gray-700" placeholder="Try: solve x^2 + 5x + 6 = 0" />
                 <button className="h-full bg-blue-primary rounded-full px-4 text-white font-semibold font-outfit text-nowrap">Solve Equation</button>
             </div>
-
-            {/* <div className="w-full bg-yellow-500 flex justify-center container">
-                <div className="max-w-[1400px] max-xl:w-[1024px] max-lg:w-[768px] max-md:w-[640px] max-sm:w-full mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                    <div className="bg-blue-500">Lorem Ipsum</div>
-                    <div className="bg-blue-500">Lorem Ipsum</div>
-                    <div className="bg-blue-500">Lorem Ipsum</div>
-                </div>
-            </div> */}
 
             <div className="w-full md:max-w-[768px] lg:max-w-[1024px]  mx-auto  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-10 gap-6">
                 <div className="bg-blue-500 h-[300px] rounded-xl relative overflow-hidden">

@@ -13,7 +13,7 @@ export default function Navbar() {
 
     return (
         <div className="fixed top-0 left-0 right-0 z-50">
-            <div className="max-w-[1400px] max-xl:max-w-[1024px] max-lg:max-w-[768px] max-md:max-w-[640px] max-sm:max-w-full mx-auto flex justify-between py-6">
+            <div className="max-w-[1400px] max-xl:max-w-[1024px] max-lg:max-w-[768px] max-md:max-w-[640px] max-sm:max-w-full mx-auto flex justify-between px-6 py-6">
                 <div>
                     <NavLink to="/" onClick={() => setIsActive(false)}>
                         <p className="font-outfit text-blue-primary font-semibold text-2xl">Sankaku</p>
