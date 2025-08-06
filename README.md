@@ -1,12 +1,39 @@
-# React + Vite
+<div align=center>
+  <h1><b>Sankaku<br />三角</b></h1>
+</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![](public/banner-readme.png)
 
-Currently, two official plugins are available:
+<div align=center>
+  Empowering your math skills through interactive tools.
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## What's this?
 
-## Expanding the ESLint configuration
+<p align=justify>Sankaku (三角, or we called Triagle) is an open-source web application that provides users with a set of interactive tools to help them understand and (maybe) visualize mathematical concepts. The application is designed to be user-friendly and accessible, making it easy for students and teachers to use. The tools are built using web technologies such as React and TailwindCSS for styling. The application is also fully responsive, making it accessible on a variety of devices, including desktops, laptops, tablets, and smartphones.</p>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+First, run NPM installer
+
+```bash
+npm i
+```
+
+Second, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Contribution
+> [!WARNING]
+> This repository does not actively accept external contributions.
