@@ -15,6 +15,8 @@ function convertLength(value, fromUnit, toUnit) {
     "Centimeter": 0.01,
     "Decimeter": 0.1,
     "Meter": 1,
+    "Decameter": 10,
+    "Hectometer": 100,
     "Kilometer": 1000
   };
 

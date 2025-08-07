@@ -10,12 +10,20 @@ export default function LengthBox() {
 
     const [lengthUnits, setLengthUnits] = useState([
         {
-            name: "Meter",
-            symbol: "m",
-        },
-        {
             name: "Kilometer",
             symbol: "km",
+        },
+        {
+            name: "Hectometer",
+            symbol: "hm",
+        },
+        {
+            name: "Decameter",
+            symbol: "dam",
+        },
+        {
+            name: "Meter",
+            symbol: "m",
         },
         {
             name: "Centimeter",
@@ -135,7 +143,19 @@ export default function LengthBox() {
                     </div>
                 </div>
             </div>
-            <div className="flex-1"></div>
+            <div className="flex-1 bg-blue-primary rounded-xl h-full">
+                <div className="p-6 text-white">
+                    <h3 className="font-outfit text-2xl font-bold mb-4">Length Conversion Info</h3>
+                    <p className="font-outfit text-lg mb-2">This tool allows you to convert between different units of length with high precision. Simply enter the value and select the units you wish to convert from and to.</p>
+                    <h4 className="font-outfit text-xl font-semibold mt-4 mb-2">Examples:</h4>
+                    <ul className="list-disc list-inside">
+                        <li>1 Meter = 100 Centimeters</li>
+                        <li>1 Kilometer = 0.621371 Miles</li>
+                        <li>1 Inch = 2.54 Centimeters</li>
+                        <li>1 Foot = 0.3048 Meters</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     );
 }
