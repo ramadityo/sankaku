@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { convertLength } from "../../lib/math";
+import { motion as m } from "framer-motion";
 
 export default function LengthBox() {
     const [fromUnit, setFromUnit] = useState("Kilometer");
@@ -80,9 +81,9 @@ export default function LengthBox() {
     }, [fromValue, fromUnit, toUnit]);
 
     return (
-        <div className="mt-10 w-full h-[50vh] p-10 rounded-xl border border-blue-secondary shadow-xl flex gap-6 items-center">
-            <div className="flex-1 flex flex-col justify-center gap-6">
-                <div className="h-max flex-1">
+        <div className="mt-10 w-full min-h-[50vh] max-md:flex-col p-10 rounded-xl border border-blue-secondary shadow-xl flex gap-6 items-center">
+            <div className="flex-1 flex flex-col justify-center gap-6 max-md:w-full">
+                <div className="h-max flex-1 ">
                     <p className="font-outfit text-gray-700 text-xl mb-2">From</p>
                     <div className="relative">
                         <input
@@ -100,7 +101,7 @@ export default function LengthBox() {
                         </div>
                     </div>
                     <div className="w-full flex justify-end">
-                        <select name="fromUnit" id="fromUnit" className="py-2 outline-none" value={fromUnit} onChange={(e) => setFromUnit(e.target.value)}>
+                        <select name="fromUnit" id="fromUnit" className="py-2 outline-none text-right" value={fromUnit} onChange={(e) => setFromUnit(e.target.value)}>
                             {lengthUnits.map((unit, index) => (
                                 <option key={index} value={unit.name}>
                                     {unit.name}
@@ -143,8 +144,8 @@ export default function LengthBox() {
                     </div>
                 </div>
             </div>
-            <div className="flex-1 bg-blue-primary rounded-xl h-full">
-                <div className="p-6 text-white">
+            <div className="py-10 px-6 relative overflow-hidden flex-1 flex items-center bg-blue-primary rounded-xl h-full">
+                <div className="text-white relative z-20">
                     <h3 className="font-outfit text-2xl font-bold mb-4">Length Conversion Info</h3>
                     <p className="font-outfit text-lg mb-2">This tool allows you to convert between different units of length with high precision. Simply enter the value and select the units you wish to convert from and to.</p>
                     <h4 className="font-outfit text-xl font-semibold mt-4 mb-2">Examples:</h4>
@@ -155,6 +156,10 @@ export default function LengthBox() {
                         <li>1 Foot = 0.3048 Meters</li>
                     </ul>
                 </div>
+
+                <m.div initial={{ opacity: 0, translateX: 50, translateY: 100, rotate: 50 }} animate={{ opacity: .5, translateX: 0, translateY: 0, rotate: 12, transition: { duration: 1, delay: 0.5, ease: "circOut" }  }} exit={{ opacity: 0, translateX: 50, translateY: 100, rotate: 50 }} className="absolute z-10 -bottom-16 -right-20 w-[300px] ">
+                    <img src="/bocchi.webp" className="w-[300px]" alt="" />
+                </m.div>
             </div>
         </div>
     );
