@@ -10,7 +10,7 @@
 
 ## What's this?
 
-<p align=justify>Sankaku (三角, or we called Triagle) is an open-source web application that provides users with a set of interactive tools to help them understand and (maybe) visualize mathematical concepts. The application is designed to be user-friendly and accessible, making it easy for students and teachers to use. The tools are built using web technologies such as React and TailwindCSS for styling. The application is also fully responsive, making it accessible on a variety of devices, including desktops, laptops, tablets, and smartphones.</p>
+<p align=justify>Sankaku (三角, or we called Triangle) is an open-source web application that provides users with a set of interactive tools to help them understand and (maybe) visualize mathematical concepts. The application is designed to be user-friendly and accessible, making it easy for students and teachers to use. The tools are built using web technologies such as React and TailwindCSS for styling. The application is also fully responsive, making it accessible on a variety of devices, including desktops, laptops, tablets, and smartphones.</p>
 
 ## Getting Started
 

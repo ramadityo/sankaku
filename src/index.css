@@ -9,8 +9,16 @@
 
   --animate-rubberBand: rubberBand 1s forwards;
   --animate-bounceAnime: bounce 1s forwards;
+  --animate-rotateSwap: rotateSwap 1s forwards cubic-bezier(0.19,1,0.22,1);
 
-
+  @keyframes rotateSwap {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
   @keyframes rubberBand {
     0% {
       -webkit-transform: scaleX(1);
