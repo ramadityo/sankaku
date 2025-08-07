@@ -80,6 +80,10 @@ export default function LengthBox() {
         handleConvert();
     }, [fromValue, fromUnit, toUnit]);
 
+    function easeOutQuint(x) {
+        return 1 - Math.pow(1 - x, 5);
+    }
+
     return (
         <div className="mt-10 w-full min-h-[50vh] max-md:flex-col p-10 rounded-xl border border-blue-secondary shadow-xl flex gap-6 items-center">
             <div className="flex-1 flex flex-col justify-center gap-6 max-md:w-full">
@@ -157,7 +161,7 @@ export default function LengthBox() {
                     </ul>
                 </div>
 
-                <m.div initial={{ opacity: 0, translateX: 50, translateY: 100, rotate: 50 }} animate={{ opacity: .5, translateX: 0, translateY: 0, rotate: 12, transition: { duration: 1, delay: 0.5, ease: "circOut" }  }} exit={{ opacity: 0, translateX: 50, translateY: 100, rotate: 50 }} className="absolute z-10 -bottom-16 -right-20 w-[300px] ">
+                <m.div initial={{ opacity: 0.5, translateX: 50, translateY: 1000, rotate: 50 }} animate={{ opacity: 0.5, translateX: 0, translateY: 0, rotate: 12, transition: { duration: 1.5, delay: 0.5, ease: easeOutQuint } }} exit={{ opacity: 0, translateX: 50, translateY: 100, rotate: 50 }} className="absolute z-10 -bottom-16 -right-20 w-[300px] ">
                     <img src="/bocchi.webp" className="w-[300px]" alt="" />
                 </m.div>
             </div>

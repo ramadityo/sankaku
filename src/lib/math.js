@@ -27,4 +27,26 @@ function convertLength(value, fromUnit, toUnit) {
   return (value * conversionRates[fromUnit]) / conversionRates[toUnit];
 }
 
-export { convertLength };
+function convertMass(value, fromUnit, toUnit) {
+  const conversionRates = {
+    "Tonne": 1000000,       
+    "Quintal": 100000,        
+    "Kilogram": 1_000,         
+    "Hektogram": 100,         
+    "Dekagram": 10,           
+    "Gram": 1,                
+    "Desigram": 0.1,           
+    "Centigram": 0.01,         
+    "Miligram": 0.001,         
+    "Microgram": 0.000001,     
+    "Pound": 453.59237         
+  };
+
+  if (!conversionRates[fromUnit] || !conversionRates[toUnit]) {
+    throw new Error("Invalid units");
+  }
+
+  return (value * conversionRates[fromUnit]) / conversionRates[toUnit];
+}
+
+export { convertLength, convertMass };

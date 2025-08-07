@@ -1,4 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+// 1. Import motion dan AnimatePresence dari framer-motion
+import { motion, AnimatePresence } from "framer-motion"; 
+
 import LengthBox from "./components/UnitConverter/LengthBox";
 import MassWeightBox from "./components/UnitConverter/MassWeightBox";
 import TempBox from "./components/UnitConverter/TempBox";
@@ -18,6 +21,26 @@ export default function UnitConverter() {
         { name: "Energy", id: 5, componentName: <EnergyBox /> },
     ];
 
+    // 2. (Opsional tapi direkomendasikan) Definisikan varian animasi
+    const variants = {
+        enter: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.3,
+                ease: "easeInOut"
+            }
+        },
+        exit: {
+            opacity: 0,
+            y: -20, // Bergerak sedikit ke atas saat menghilang
+            transition: {
+                duration: 0.2,
+                ease: "easeInOut"
+            }
+        }
+    };
+
     return (
         <div className="w-full">
             <div className="space-y-2">
@@ -32,7 +55,19 @@ export default function UnitConverter() {
                 ))}
             </div>
 
-            <div className="container mx-auto">{units[activeState].componentName}</div>
+            <div className="container mx-auto mt-8">
+                <AnimatePresence mode="wait">
+                    <motion.div
+                        key={activeState}
+                        variants={variants}
+                        initial="exit"
+                        animate="enter"
+                        exit="exit"
+                    >
+                        {units[activeState].componentName}
+                    </motion.div>
+                </AnimatePresence>
+            </div>
         </div>
     );
 }
