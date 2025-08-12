@@ -161,7 +161,7 @@ export default function LengthBox() {
                     </ul>
                 </div>
 
-                <m.div initial={{ opacity: 0.5, translateX: 50, translateY: 1000, rotate: 50 }} animate={{ opacity: 0.5, translateX: 0, translateY: 0, rotate: 12, transition: { duration: 1.5, delay: 0.5, ease: easeOutQuint } }} exit={{ opacity: 0, translateX: 50, translateY: 100, rotate: 50 }} className="absolute z-10 -bottom-16 -right-20 w-[300px] ">
+                <m.div initial={{ opacity: 0.5, translateX: 50, translateY: 1000, rotate: 50 }} animate={{ opacity: 0.5, translateX: 0, translateY: 0, rotate: 12, transition: { duration: 1.5, delay: 0.5, ease: easeOutQuint } }} className="absolute z-10 -bottom-16 -right-20 w-[300px] ">
                     <img src="/bocchi.webp" className="w-[300px]" alt="" />
                 </m.div>
             </div>
