@@ -52,9 +52,12 @@ const SwapButton = ({ onClick }) => (
 const InfoPanel = () => (
     <div className="py-10 px-6 relative overflow-hidden flex-1 flex items-center bg-blue-primary rounded-xl h-full">
         <div className="text-white relative z-20">
-            <h3 className="font-outfit text-2xl font-bold mb-4">Temperature Conversion Info</h3>
-            <p className="font-outfit text-lg mb-2">This tool allows you to convert between different units of temperature with high precision. Simply enter the value and select the units you wish to convert from and to.</p>
+            <h3 className="font-outfit text-2xl font-bold mb-4">Do you know?</h3>
+            <p className="font-outfit text-lg mb-2">Temperature is not just a number on a thermometer — it is how we perceive heat and cold in the world.
+Each scale has its own “style”: Celsius is commonly used in everyday life, Fahrenheit is popular in America, and Kelvin is the official language of scientists.
+Remember! When converting temperature scales, we don't just multiply or divide numbers, but sometimes we have to shift the zero point first.</p>
             <h4 className="font-outfit text-xl font-semibold mt-4 mb-2">Examples:</h4>
+
             <ul className="list-disc list-inside font-outfit font-light">
                 <li>0ºC = 32ºF</li>
                 <li>100ºC = 212ºF</li>

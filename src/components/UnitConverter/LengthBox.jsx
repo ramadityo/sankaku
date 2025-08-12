@@ -150,8 +150,8 @@ export default function LengthBox() {
             </div>
             <div className="py-10 px-6 relative overflow-hidden flex-1 flex items-center bg-blue-primary rounded-xl h-full">
                 <div className="text-white relative z-20">
-                    <h3 className="font-outfit text-2xl font-bold mb-4">Length Conversion Info</h3>
-                    <p className="font-outfit text-lg mb-2">This tool allows you to convert between different units of length with high precision. Simply enter the value and select the units you wish to convert from and to.</p>
+                    <h3 className="font-outfit text-2xl font-bold mb-4">Do you know?</h3>
+                    <p className="font-outfit text-lg mb-2">Have you ever wondered how many steps it takes to get to the shop next door? That's what units of distance are for — from microscopic ones like millimeters to ones that leave you breathless like kilometers. The rule is simple: for every step up the unit ladder, the value is multiplied by 10; for every step down, it is divided by 10.</p>
                     <h4 className="font-outfit text-xl font-semibold mt-4 mb-2">Examples:</h4>
                     <ul className="list-disc list-inside">
                         <li>1 Meter = 100 Centimeters</li>

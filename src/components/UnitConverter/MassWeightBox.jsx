@@ -138,8 +138,10 @@ export default function MassWeightBox() {
             </div>
             <div className="py-10 px-6 relative overflow-hidden flex-1 flex items-center bg-blue-primary rounded-xl h-full">
                 <div className="text-white relative z-20">
-                    <h3 className="font-outfit text-2xl font-bold mb-4">Weight Conversion Info</h3>
-                    <p className="font-outfit text-lg mb-2">This tool allows you to convert between different units of weight with high precision. Simply enter the value and select the units you wish to convert from and to.</p>
+                    <h3 className="font-outfit text-2xl font-bold mb-4">Do you know?</h3>
+                    <p className="font-outfit text-lg mb-2">Ever wonder why recipes use grams for flour, but scales use kilograms for weight?
+That's because mass has many scales — from as fine as coffee grounds to as heavy as a fully loaded truck.
+The trick is simple: for each step up or down, multiply by 10 or divide by 10.</p>
                     <h4 className="font-outfit text-xl font-semibold mt-4 mb-2">Examples:</h4>
                     <ul className="list-disc list-inside">
                         <li>1 Kilogram = 1000 Grams</li>
